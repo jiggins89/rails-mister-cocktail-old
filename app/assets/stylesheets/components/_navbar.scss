@@ -2,12 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
+  background: #EF5B5B;
   padding: 16px 24px;
+  margin-bottom: 25px;
+    h1{
+      font-size: 48px;
+      font-family: Playfair Display;
+      margin: 0px;
+      font-weight: 700;
+      color: #F4F7F6;
+    }
+    a {
+      font-size: 24px;
+      font-family: Playfair Display;
+      margin: 0px;
+      font-weight: 200;
+      color: #F4F7F6;
+    }
 }
 
 .navbar-lewagon .brand {
   width: 40px;
+  display: flex;
 }
 
 .navbar-lewagon .navbar-lewagon-actions {
