@@ -1,5 +1,6 @@
 .container {
-  width: 1400px;
+  width: 100vw;
+  padding: 25px;
 }
 
 .cards {
@@ -13,7 +14,8 @@
 }
 
 .card-category {
-  background-image: asset-url('cocktail.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url('cocktail.jpg');
+  // background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-size: cover;
   height: 300px;
   background-size: cover;
@@ -24,9 +26,13 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 25px;
 }
+
+// .card-category:before {
+// }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

@@ -4,9 +4,11 @@
   <div class="cards">
 
     <% @cocktails.each do |cocktail|%>
-      <div class="card-category">
-          <%= link_to cocktail.name, cocktail %>
-      </div>
+      <%= link_to(cocktail) do %>
+        <div class="card-category">
+          <%= cocktail.name %>
+        </div>
+      <% end %>
     <% end %>
 
   </div>

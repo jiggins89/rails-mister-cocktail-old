@@ -1,19 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="banner">
+  <div>
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
 
-<h1><%= @cocktail.name %></h1>
+<div class="cocktail-container">
+  <div class="cocktail-small-containers">
+    <h3>Description</h3>
+    <p>Cool and refreshing. Vodka, soda, lime. That’s it. Perfect for a bar stop and also for cocktail hour at home.</p>
+  </div>
 
-<h3>Ingredients:</h3>
+  <div class="cocktail-small-containers">
 
-<ul>
-  <% @doses.each do |dose| %>
-    <li>
-      <%= dose.ingredient.name %> <br>
-      -<%= dose.description %>
-    </li>
-  <% end %>
-</ul>
+    <ul>
+      <h3>Ingredients:</h3>
+      <% @doses.each do |dose| %>
+        <li>
+         <%= dose.ingredient.name %> - ( <%= dose.description %>)
+        </li>
+      <% end %>
+      <li class="btn-flat"><%= link_to 'Add Ingredients', new_cocktail_dose_path(@cocktail) %></li>
+    </ul>
 
-<ul>
-  <li><%= link_to 'Back', cocktails_path %></li>
-  <li><%= link_to 'Edit', new_cocktail_dose_path(@cocktail) %></li>
-</ul>
+  </div>
+
+</div>
+
+
